@@ -8,6 +8,7 @@ import { Contact } from './components/Pages/Contact';
 import { Projects } from './components/Pages/Projects';
 import { QuoteApi } from './components/Pages/ProjectLinks/QuoteApi/QuoteApi';
 import { Twitch } from './components/Pages/ProjectLinks/Twitch/Twitch';
+import { NumberGuesser } from './components/Pages/ProjectLinks/NumberGuesser/NumberGuesser';
 import { FullBackgroundImage } from './components/FullBackgroundImage';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                             <Route path="/projects" component={Projects} />
                             <Route path="/quoteapi" component={QuoteApi} />
                             <Route path="/twitch" component={Twitch} />
+                            <Route path="/numberguesser" component={NumberGuesser} />
                         </Switch>
                     </Router>
                 </div>

@@ -24,6 +24,7 @@ function NavBar() {
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="/quoteapi">Quote Api</NavDropdown.Item>
             <NavDropdown.Item href="/twitch">My Favorite Twitch Streams</NavDropdown.Item>
+            <NavDropdown.Item href="/numberguesser">Number Guesser Game</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <div className="social-part">
