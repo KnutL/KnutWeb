@@ -200,6 +200,8 @@ export class NumberGuesser extends Component {
                     <div>
                         {this.state.humanScore === 1 ? (
                             <div>
+                                <p>The correct number was {this.state.targetGuess}</p>
+                                <p>The Computer guessed {this.state.computerGuess}</p>
                                 <p>You won!</p>
                                 <p>You were closer than the computer!</p>
                             </div>
@@ -207,7 +209,10 @@ export class NumberGuesser extends Component {
                                 <div></div>
                             )}
                         {this.state.computerScore === 1 ? (
-                            <p className="m-2">The computer were closer than you.</p>
+                            <div>
+                                <p>The correct number was {this.state.targetGuess}</p>
+                                <p className="m-2">The computer were closer than you.</p>
+                            </div>
                         ) : (
                                 <div></div>
                             )}

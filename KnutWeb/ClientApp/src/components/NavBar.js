@@ -22,9 +22,12 @@ function NavBar() {
           <NavLink href="/contact">Contact</NavLink>
           {/* <NavLink href="/projects">Projects</NavLink> */}
           <NavDropdown title="Projects" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/weather">Weather</NavDropdown.Item>
+            <NavDropdown.Item href="/metronome">Metronome</NavDropdown.Item>
             <NavDropdown.Item href="/quoteapi">Quote Api</NavDropdown.Item>
             <NavDropdown.Item href="/twitch">My Favorite Twitch Streams</NavDropdown.Item>
             <NavDropdown.Item href="/numberguesser">Number Guesser Game</NavDropdown.Item>
+            <NavDropdown.Item href="/chatbot">Chat Bot(WIP)</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <div className="social-part">

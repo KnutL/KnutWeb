@@ -9,6 +9,9 @@ import { Projects } from './components/Pages/Projects';
 import { QuoteApi } from './components/Pages/ProjectLinks/QuoteApi/QuoteApi';
 import { Twitch } from './components/Pages/ProjectLinks/Twitch/Twitch';
 import { NumberGuesser } from './components/Pages/ProjectLinks/NumberGuesser/NumberGuesser';
+import { ChatBot } from './components/Pages/ProjectLinks/ChatBot/ChatBot';
+import { Weather } from './components/Pages/ProjectLinks/Weather/Weather';
+import { Metronome } from './components/Pages/ProjectLinks/Metronome/Metronome';
 import { FullBackgroundImage } from './components/FullBackgroundImage';
 
 function App() {
@@ -27,6 +30,9 @@ function App() {
                             <Route path="/quoteapi" component={QuoteApi} />
                             <Route path="/twitch" component={Twitch} />
                             <Route path="/numberguesser" component={NumberGuesser} />
+                            <Route path="/chatbot" component={ChatBot} />
+                            <Route path="/weather" component={Weather} />
+                            <Route path="/metronome" component={Metronome} />
                         </Switch>
                     </Router>
                 </div>

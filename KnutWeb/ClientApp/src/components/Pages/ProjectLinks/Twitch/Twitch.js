@@ -63,7 +63,7 @@ export const Twitch = () => {
         <div className='wrapper'>
             {list.map((x, key) => {
                 return (
-                    <div id={x.channel + 'wrapper' + key}>
+                    <div id={x.channel + 'wrapper' + key} key={key}>
                         <StreamerTitle>{x.channel}</StreamerTitle>
                         <StreamWrapper key={key}>
 
