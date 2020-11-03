@@ -54,7 +54,7 @@ export const Weather = () => {
             {weather && (
                 <div>
                     <div className="">
-                        <input type="text" className="form-control" placeholder="Enter channel name" value={city} className="form-control col-md-4 mx-auto" onChange={changeCity} />
+                        <input type="text" placeholder="Enter channel name" value={city} className="form-control col-md-4 mx-auto" onChange={changeCity} />
                         <input type="button" value="Search" className="btn btn-dark m-2" onClick={getWeather}/>
                     </div>
                     <p>Weather in {weather.name}</p>

@@ -32,7 +32,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 6%;
+  padding-top: 2%;
 }
 
 .App-link {
@@ -50,7 +50,7 @@ body {
 
 .content-wrapper {
   z-index: 1;
-  width: 1500px;
+  width: 100%;
 }
 
 .toast-wrapper {
@@ -64,9 +64,24 @@ body {
   background-color: #434853;
 }
 
+.profile-image {
+  background-image: url(./images/knutthor.jpg);
+
+  /* Full height */
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  position: fixed;
+
+  /* Center and scale the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .full-background-image {
   /* Image used */
-  background-image: url(./images/city.jpg);
+  background-image: url(./images/subway.jpg);
 
   /* Full height */
   height: 100vh;
@@ -79,6 +94,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.full-background-image-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  opacity: 1.2;
 }
 
 .list-group-item span {

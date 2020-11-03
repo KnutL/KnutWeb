@@ -7,7 +7,8 @@ export class QuoteApi extends Component {
 		super(props);
 		this.state = {
 			quote: '',
-			author: ''
+			author: '',
+			test: []
 		}
 	}
 
