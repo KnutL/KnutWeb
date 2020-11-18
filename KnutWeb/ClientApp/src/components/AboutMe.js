@@ -62,7 +62,7 @@ export const AboutMe = ({ randomColor }) => {
     <Wrapper>
       {companyList.map((item, index) => {
         return (
-          <CardWrapper key={index} id="card-wrapper" randomColor={randomColor + '55'}>
+          <CardWrapper key={index} id="card-wrapper" randomColor={randomColor + '99'}>
             <Card.Header>
               <Card.Title className="align-middle">{item.company}</Card.Title>
             </Card.Header>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGhost } from "@fortawesome/free-solid-svg-icons";
 
 const WelcomeWrapper = styled("div")`
   max-width: 800px;
@@ -38,20 +37,6 @@ const LinkWrapper = styled("div")`
   }
   a:hover {
     border-bottom: 3px solid ${(props) => props.randomColor};
-  }
-`;
-const GhostLeftWrapper = styled("div")`
-  float: left;
-  padding-left: 20px;
-  @media screen and (max-width: 430px) {
-    display:none
-  }
-`;
-const GhostRightWrapper = styled("div")`
-  float: right;
-  padding-right: 20px;
-  @media screen and (max-width: 430px) {
-    display:none
   }
 `;
 
@@ -99,12 +84,6 @@ export const Home = ({ randomColor }) => {
 
   return (
     <div className="wrapper">
-      <GhostLeftWrapper>
-        <FontAwesomeIcon icon={faGhost} color={randomColor} size="5x" />
-      </GhostLeftWrapper>
-      <GhostRightWrapper>
-        <FontAwesomeIcon icon={faGhost} color={randomColor} size="5x" />
-      </GhostRightWrapper>
       <h1>
         <WelcomeWrapper randomColor={randomColor}>
           <p>{welcomeMessage}</p>
