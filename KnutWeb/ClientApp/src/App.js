@@ -15,7 +15,9 @@ import { Weather } from './components/Pages/ProjectLinks/Weather/Weather';
 import { Metronome } from './components/Pages/ProjectLinks/Metronome/Metronome';
 import { Pokemon } from './components/Pages/ProjectLinks/Pokemon/Pokemon';
 import { Logbook } from './components/Pages/ProjectLinks/Logbook/Logbook';
+import { BetterSpark } from './components/Pages/ProjectLinks/BetterSpark/BetterSpark';
 import { FullBackgroundImage } from './components/FullBackgroundImage';
+import { Mari } from './components/Pages/ProjectLinks/Mari/Mari';
 
 function App() {
     const [color, setColor] = useState("");
@@ -48,6 +50,7 @@ function App() {
                                 <Experience {...props} randomColor={color}/>
                             )} />
                             <Route path="/projects" component={Projects} />
+                            <Route path="/betterspark" component={BetterSpark} />
                             <Route path="/quoteapi" component={QuoteApi} />
                             <Route path="/twitch" component={Twitch} />
                             <Route path="/numberguesser" component={NumberGuesser} />
@@ -56,6 +59,7 @@ function App() {
                             <Route path="/metronome" component={Metronome} />
                             <Route path="/pokemon" component={Pokemon} />
                             <Route path="/logbook" component={Logbook} />
+                            <Route path="/mari" component={Mari} />
                         </Switch>
                     </Router>
                 </div>

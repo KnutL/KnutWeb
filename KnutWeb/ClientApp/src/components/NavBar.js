@@ -22,17 +22,19 @@ function NavBar() {
     <Navbar expand="lg" variant="dark">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto navbar-center">
+        <Nav className="mx-auto">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           {/*<NavLink href="/contact">Contact</NavLink>*/}
           <NavLink href="/experience">Experience</NavLink>
+          <NavLink href="/mari">Mari</NavLink>
           {/* <NavLink href="/projects">Projects</NavLink> */}
           <DropdownWrapper>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               {/*<NavDropdown.Item href="/logbook">Logbook</NavDropdown.Item>*/}
+              <NavDropdown.Item href="/betterspark">BetterSpark</NavDropdown.Item>
               <NavDropdown.Item href="/pokemon">Pokemon</NavDropdown.Item>
-              {/*<NavDropdown.Item href="/weather">Weather</NavDropdown.Item> */}
+              <NavDropdown.Item href="/weather">Weather</NavDropdown.Item>
               <NavDropdown.Item href="/metronome">Metronome</NavDropdown.Item>
               <NavDropdown.Item href="/quoteapi">Quote Api</NavDropdown.Item>
               <NavDropdown.Item href="/twitch">

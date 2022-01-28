@@ -28,7 +28,7 @@ export const Weather = () => {
   const today = weekday[d.getDay()];
 
   function getWeather() {
-    let appId = "SECRET";
+    let appId = "582b390fa2ea3979397866c4cb727a22";
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appId}`;
 
     axios.get(url).then((res) => {

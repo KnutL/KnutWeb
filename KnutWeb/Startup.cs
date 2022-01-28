@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using KnutWeb.Models;
 
 namespace KnutWeb
 {
@@ -29,6 +31,10 @@ namespace KnutWeb
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.AddDbContext<TicketContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=KnutWeb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

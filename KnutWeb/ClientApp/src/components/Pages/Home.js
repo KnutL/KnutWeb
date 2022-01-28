@@ -74,6 +74,7 @@ export const Home = ({ randomColor }) => {
     "Hola!",
     `Trevlig ${dagar[now.getDay()]}!`,
     `Have a nice ${days[now.getDay()]}!`,
+    "Mari is a sexy beast"
   ];
 
   function randomMessage() {
